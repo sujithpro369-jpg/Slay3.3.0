@@ -1,0 +1,58 @@
+Load<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SLAY Language</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME -->
+<div id="homePage" class="page active">
+  <h1 class="title">SLAY LANGUAGE</h1>
+  <p class="subtitle">Build • Code • Dominate</p>
+
+  <button id="startBtn">Start</button>
+  <button id="settingsBtn">Settings</button>
+</div>
+
+<!-- SETTINGS -->
+<div id="settingsPage" class="page">
+  <h2>⚙ Settings</h2>
+
+  <div id="settingsBox">
+    <p>Theme Color</p>
+    <input type="color" id="themeColor">
+
+    <p>Font Size</p>
+    <input type="range" id="fontSize" min="12" max="24">
+
+    <p>Max Tabs</p>
+    <input type="number" id="maxTabs" min="1" max="10">
+  </div>
+
+  <button id="saveSettings">Save</button>
+  <button id="closeSettings">⬅ Back</button>
+</div>
+
+<!-- EDITOR -->
+<div id="editorPage" class="page">
+  <button id="backBtn">⬅ Back</button>
+
+  <h2>SLAY Console</h2>
+
+  <div id="tabs">
+    <div id="tabContainer"></div>
+    <button id="addTab">+</button>
+  </div>
+
+  <textarea id="code"></textarea>
+
+  <button id="runBtn">RUN (Ctrl + Enter)</button>
+  
+  <pre id="output"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

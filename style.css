@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00ff88;
+  font-family: monospace;
+  padding: 20px;
+}
+
+/* PAGE */
+.page { display: none; }
+.page.active { display: block; }
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 0 20px #00ff88;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: black;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* BOXES */
+#code, #output, #settingsBox {
+  width: 100%;
+  background: #0d0d0d;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#code {
+  height: 150px;
+}
+
+#output {
+  height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+/* TABS */
+#tabs {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  padding: 6px 12px;
+  border: 2px solid #00ff88;
+  margin-right: 5px;
+  cursor: pointer;
+  background: #111;
+}
+
+.tab.active {
+  background: #00ff88;
+  color: black;
+}
